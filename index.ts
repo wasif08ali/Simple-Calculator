@@ -1,10 +1,9 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
 const answer = await inquirer.prompt([
-    { message: "Enter first number", type: "number", name: "firstNumber" },
-    { message: "Enter second number", type: "number", name: "secondNumber" },
-    {
-        message: "Choose the operation",
+    { message: "Enter number", type: "number", name: "firstNumber" },
+    { message: "Enter number", type: "number", name: "secondNumber" },
+       { message: "Choose the operation",
         type: "list",
         name: "operation",
         choices: [
